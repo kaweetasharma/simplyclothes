@@ -6,12 +6,12 @@ import { useNavigate } from 'react-router-dom';
 import Loadingbox from '../../components/LoadingBox';
 import MessageBox from '../../components/MessageBox';
 import { Store } from '../../store';
-import { getError } from '../../utils';
+import { getError } from '../../utils/utils';
 import {
   FETCH_FAIL,
   FETCH_REQUEST,
   FETCH_SUCCESS,
-} from '../OrderScreen/constants';
+} from '../../utils/constants';
 import reducer from './reducer';
 
 const OrderHistoryScreen = () => {

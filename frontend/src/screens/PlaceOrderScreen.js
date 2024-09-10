@@ -5,7 +5,7 @@ import { Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { Store } from '../store';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { getError } from '../utils';
+import { getError } from '../utils/utils';
 import Axios from 'axios';
 import Loadingbox from '../components/LoadingBox';
 

@@ -6,7 +6,7 @@ import {
   PAY_REQUEST,
   PAY_RESET,
   PAY_SUCCESS,
-} from './constants';
+} from '../../utils/constants';
 
 const reducer = (state, action) => {
   switch (action.type) {

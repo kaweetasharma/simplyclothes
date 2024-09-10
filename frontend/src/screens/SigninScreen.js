@@ -8,7 +8,7 @@ import Axios from 'axios';
 import { Store } from '../store';
 import { Link, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { getError } from '../utils';
+import { getError } from '../utils/utils';
 const Signinscreen = () => {
   const navigate = useNavigate();
   const {

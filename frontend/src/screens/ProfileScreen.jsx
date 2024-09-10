@@ -7,7 +7,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 import { toast } from 'react-toastify';
 import { Store } from '../store';
-import { getError } from '../utils';
+import { getError } from '../utils/utils';
 
 const reducer = (state, action) => {
   switch (action.type) {

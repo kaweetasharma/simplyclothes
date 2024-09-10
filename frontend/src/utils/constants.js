@@ -5,3 +5,6 @@ export const PAY_REQUEST = 'PAY_REQUEST';
 export const PAY_FAIL = 'PAY_FAIL';
 export const PAY_SUCCESS = 'PAY_SUCCESS';
 export const PAY_RESET = 'PAY_RESET';
+export const CREATE_REQUEST = 'CREATE_REQUEST';
+export const CREATE_FAIL = 'CREATE_FAIL';
+export const CREATE_SUCCESS = 'CREATE_SUCCESS';

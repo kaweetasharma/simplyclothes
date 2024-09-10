@@ -6,6 +6,7 @@ import seedRouter from './routes/seedRoutes.js';
 import productRouter from './routes/productRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import orderRouter from './routes/orderRoutes.js';
+import expressAsyncHandler from 'express-async-handler';
 
 dotenv.config();
 
