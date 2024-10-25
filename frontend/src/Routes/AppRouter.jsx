@@ -10,7 +10,7 @@ import OrderScreen from '../screens/OrderScreen/OrderScreen';
 import OrderHistoryScreen from '../screens/OrderHistoryScreen/OrderHistoryScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import Signupscreen from '../screens/SignupScreen';
-import SearchScreen from '../screens/SearchScreen';
+import SearchScreen from '../screens/SearchScreen/SearchScreen';
 import ProtectedRoute from '../components/ProtectedRoute';
 import Dashboard from '../screens/AdminPages/Dashboard/Dashboard';
 import AdminRoute from './AdminRoutes';

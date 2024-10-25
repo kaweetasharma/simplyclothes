@@ -1,0 +1,60 @@
+/* SearchScreen Styles */
+.search-screen {
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.filter-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.filter-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.filter-list li {
+  margin-bottom: 0.75rem;
+}
+
+.filter-list a {
+  color: #343a40;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.filter-list a:hover {
+  color: #007bff;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.sort-select {
+  max-width: 200px;
+  margin-right: 0.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination .active {
+  font-weight: bold;
+  border-color: #007bff;
+}

@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import AppRouter from './Routes/AppRouter';
+import Footer from './components/Footer';
 
 const App = () => {
   const {
@@ -62,9 +63,7 @@ const App = () => {
             <AppRouter />
           </Container>
         </main>
-        <footer>
-          <div className="text-center">All rights reserved</div>
-        </footer>
+        <Footer categories={categories} />
       </div>
     </BrowserRouter>
   );
