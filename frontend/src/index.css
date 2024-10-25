@@ -63,28 +63,13 @@ main {
   color: #f08000;
 }
 
-/* sidebar */
-.navbar-brand {
-  font-weight: bold;
-}
-.side-navbar {
-  width: 240px;
-  height: 100%;
-  position: absolute;
-  left: -300px;
-  background-color: #100901;
-  transition: 0.5s;
-}
-.site-container {
-  transition: 0.4s;
-}
-.active-cont {
-  margin-left: 240px;
-}
-.active-nav {
+/* Overlay style */
+.overlay {
+  position: fixed;
+  top: 0;
   left: 0;
-}
-
-.text-bold {
-  font-weight: bold;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Darken with 50% opacity */
+  z-index: 999; /* Place above most elements */
 }

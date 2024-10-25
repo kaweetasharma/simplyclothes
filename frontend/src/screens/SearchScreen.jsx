@@ -9,7 +9,7 @@ import { Button, Col, Row } from 'react-bootstrap';
 import Rating from '../components/Rating';
 import Loadingbox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
-import Product from '../components/Product';
+import Product from '../components/Product/Product';
 import { LinkContainer } from 'react-router-bootstrap';
 import { FETCH_FAIL, FETCH_REQUEST, FETCH_SUCCESS } from '../utils/constants';
 

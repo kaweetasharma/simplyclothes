@@ -1,12 +1,13 @@
-import React, { useEffect, useReducer, useState } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Product from '../components/Product';
+import Product from '../../components/Product/Product';
 import { Helmet } from 'react-helmet-async';
-import Loadingbox from '../components/LoadingBox';
-import MessageBox from '../components/MessageBox';
+import LoadingBox from '../../components/LoadingBox';
+import MessageBox from '../../components/MessageBox';
+import './HomeScreen.css';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -27,6 +28,7 @@ export default function HomeScreen() {
     error: '',
     products: [],
   });
+
   useEffect(() => {
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' });
@@ -39,21 +41,27 @@ export default function HomeScreen() {
     };
     fetchData();
   }, []);
+
   return (
-    <div>
+    <div className="home-screen">
       <Helmet>
-        <title>kapash</title>
+        <title>VogueVibe - Home</title>
       </Helmet>
-      <h1>Featured Products</h1>
-      <div className="products">
+      <header className="home-header">
+        <h1 className="home-title">Featured Products</h1>
+        <p className="home-subtitle">
+          Discover our range of exclusive and handpicked products just for you.
+        </p>
+      </header>
+      <div className="products-container">
         {loading ? (
-          <Loadingbox />
+          <LoadingBox />
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
-          <Row>
+          <Row className="products-row">
             {products.map((product) => (
-              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-4">
                 <Product product={product} />
               </Col>
             ))}
