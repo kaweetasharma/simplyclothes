@@ -4,8 +4,7 @@ A fully functional MERN stack e-commerce application for a clothing store, featu
 
 🔗 **Live Site:** [vogue.sharmakavita.uk](https://vogue.sharmakavita.uk)
 
-![VogueVibe Screenshot](https://vogue.sharmakavita.uk/screenshot.png)
-
+![VogueVibe Screenshot](https://raw.githubusercontent.com/kaweetasharma/simplyclothes/main/screenshot.png)
 ---
 
 ## Features
